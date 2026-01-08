@@ -114,5 +114,5 @@ console.log(class_average_rate / i);
 
 //affiche un message si tous les élèves de la classe sont admis
 if (success_check === students.length) {
-  console.log("Tous les élèves sont admis!");
+  console.log("Tous les élèves sont admis!!");
 }
