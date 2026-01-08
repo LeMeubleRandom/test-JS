@@ -1,6 +1,12 @@
+//Partie 1
+
 const class_name = "pandi"; //Configuration des variables de la classe d'élève
 let student_number = 20;
-let class_state = Boolean;
+let class_start = true;
+
+console.log(class_name, student_number, class_start);
+
+//Partie 2
 
 let student1 = {
   //objet constituant le nom d'un élève, sa note de maths et de français
@@ -11,6 +17,7 @@ let student1 = {
 
 console.log(student1.name); //affiche enzo dans la console
 
+//Partie 3
 let students = [
   //tableau associatif représentant la classe avec différents élèves
   {
@@ -34,11 +41,15 @@ for (i = 0; i < students.length; i++) {
   console.log(students[i].name); //affiche les noms de tous les élèves
 }
 
+//Partie 4
+
 for (i = 0; i < students.length; i++) {
   let average_rate = (students[i].math_rate + students[i].french_rate) / 2;
   console.log(students[i].name, average_rate);
   //affiche les noms des élèves et leurs moyennes
 }
+
+//Partie 5
 
 //boucle qui affiche si les élèves sont admis ou refusés en fonction de sa moyenne
 for (i = 0; i < students.length; i++) {
@@ -49,6 +60,8 @@ for (i = 0; i < students.length; i++) {
     console.log(students[i].name, "refusé");
   }
 }
+
+//Partie 6
 
 //donne une mention aux élèves en fonction de leurs moyennes
 for (i = 0; i < students.length; i++) {
@@ -66,6 +79,8 @@ for (i = 0; i < students.length; i++) {
   }
 }
 
+//Partie 7
+
 students_admis = 0;
 i = 0;
 
@@ -79,6 +94,8 @@ while (i < students.length) {
 }
 
 console.log(students_admis);
+
+//Partie Bonus
 
 students.push({ name: "Antoine", math_rate: 20, french_rate: 7 });
 // ajoute un élève au tableau de la classe
