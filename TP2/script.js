@@ -25,7 +25,7 @@ for (let i = 0; i < taille; i++) {
 let post_notes = [];
 for (let i = 0; i < notes.length; i++) {
   post_notes.push(notes[i]);
-} // crée une copie du tableau d'origine
+} // crée une copie du tableau d'origine //
 
 console.log("Partie 1 : Affichage des paramètres");
 console.log("taille :", notes.length);
