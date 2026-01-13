@@ -11,6 +11,8 @@ class Player {
   hp = 50;
   max_hp = 50;
   hpPerS = 0;
+  currentCooldown = 0;
+  direction = 0;
 
   dead = false;
   attacking = false;
@@ -126,11 +128,13 @@ class Player {
     this.level = newData.level;
     this.attack = newData.attack;
     this.cooldown = newData.cooldown;
+    this.currentCooldown = newData.currentCooldown;
     this.speed = newData.speed;
     this.hp = newData.hp;
     this.max_hp = newData.max_hp;
     this.hpPerS = newData.hpPerS;
     this.coord = newData.coord;
+    this.direction = newData.direction;
     this.dead = newData.dead;
     this.attacking = newData.attacking;
     this.moving = newData.moving;
