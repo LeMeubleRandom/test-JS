@@ -72,13 +72,15 @@ for (let i = 1; i < 30; i++) {
 
 let test = document.querySelectorAll(".peau");
 
-/*test.forEach((element) => {
+test.forEach((element) => {
   element.addEventListener("mouseenter", function () {
     let img = element.imageSource;
     const context = element.getContext("2d");
-    element.style.background = "black";
 
-    context.clearRect(0, 0, 64, 64);
+    element.width = 100;
+    element.height = 100;
+
+    context.clearRect(0, 0, element.width, element.height);
 
     var cropX = 0;
     var cropY = 64 * 15;
@@ -128,4 +130,17 @@ let test = document.querySelectorAll(".peau");
     );
   });
 });
-*/
+
+let currentWalkSpriteStep = 0;
+let walkSpriteIndex = 0;
+let walkSpriteDuration = 3;
+let walkSpritesNumber = 9;
+
+currentWalkSpriteStep++;
+if (currentWalkSpriteStep >= walkSpriteDuration) {
+  currentWalkSpriteStep = 0;
+  walkSpriteIndex++;
+}
+if (walkSpriteIndex >= walkSpritesNumber) {
+  walkSpriteIndex = 0;
+}
