@@ -59,14 +59,13 @@ class Game {
 
     tabId.forEach((element) => {
       const check = localTabId.includes(element) ? true : false;
-      if (!check) {
+      if (!check)
         this.players[element] = new Player(
           element,
           gsfs.players[element].name,
           gsfs.players[element].skinPath,
           gsfs.players[element].position,
         );
-      }
     });
 
     localTabId.forEach((element) => {
