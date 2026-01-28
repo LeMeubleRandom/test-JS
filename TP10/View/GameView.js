@@ -1,4 +1,4 @@
-class GameView {
+export default class GameView {
   constructor(game) {
     this.canvas = document.querySelector("canvas");
     this.dim = {
@@ -94,16 +94,16 @@ class GameView {
     this.context.lineWidth = 5;
     this.context.strokeStyle = "white";
     this.context.strokeRect(
-      0.68 * this.canvas.width,
-      0.1 * this.canvas.height - 60,
-      198,
-      70,
+      0.56 * this.canvas.width - 10,
+      0.03 * this.canvas.height,
+      148,
+      63,
     );
-    this.context.font = "Bold 70px Arial";
+    this.context.font = "Bold 50px Arial";
     this.context.fillStyle = "white";
     this.context.fillText(
       `${minutes}:${secondes}`,
-      0.68 * this.canvas.width + 10,
+      0.56 * this.canvas.width,
       0.1 * this.canvas.height,
     );
   }
@@ -205,12 +205,12 @@ class GameView {
   }
 
   classement() {
-    this.context.font = "bold 70px arial";
+    this.context.font = "bold 50px arial";
     this.context.fillStyle = "white";
     this.context.fillText(
       `${this.livingPlayers.length}/${Object.keys(this.game.players).length}`,
-      this.canvas.width * 0.91,
-      this.canvas.height * 0.1,
+      0.75 * this.canvas.width,
+      0.1 * this.canvas.height,
     );
     console.log(this.livingPlayers);
 

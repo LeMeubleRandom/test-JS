@@ -1,4 +1,4 @@
-class Player {
+export default class Player {
   constructor(id, name, skinPath, coord) {
     this.id = id;
     this.name = name;

@@ -1,4 +1,6 @@
-class Game {
+import Player from "./Player.js";
+
+export default class Game {
   constructor() {
     this.isRunning = false;
     this.timer = 0;

@@ -1,7 +1,7 @@
-class GameController {
-  constructor() {
-    this.game = new Game();
-    this.gameView = new GameView(this.game);
+export default class GameController {
+  constructor(game, gameView) {
+    this.game = game;
+    this.gameView = gameView;
     this.username = localStorage.getItem("username");
     this.link = localStorage.getItem("link");
     this.skinPath = localStorage.getItem("skin");
@@ -95,4 +95,3 @@ class GameController {
 
 // === Start the game controller by instantiating the GameController class ===
 // This line will execute the constructor (e.g, launch the frontend)
-new GameController();
