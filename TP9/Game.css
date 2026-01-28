@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#font {
+  display: block;
+  z-index: 1;
+}
+
+#title {
+  color: white;
+  position: absolute;
+  top: 170px;
+  right: 120px;
+}
+
+#tableau {
+  position: absolute;
+  top: 260px;
+  right: 80px;
+  z-index: 10;
+  height: 750px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 5px solid black;
+  box-shadow: 0 0 20px rgba(255, 255, 255);
+  border-radius: 8px;
+  padding: 23px 20px 20px 20px;
+
+  text-align: center;
+}
+
+#tableau p {
+  font-size: 23px;
+  font-weight: bold;
+  padding: 7px 50px 0 50px;
+}
+
+#victoryScreen {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 29em;
+  z-index: 11;
+  width: 20em;
+  height: 650px;
+
+  background-color: rgb(200, 200, 200);
+  border: 5px solid black;
+  box-shadow: 0 0 20px rgba(255, 255, 255);
+  border-radius: 8px;
+  padding: 23px 50px 20px 50px;
+}
+
+#winner {
+}
